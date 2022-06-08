@@ -14,7 +14,7 @@ from config import (BOT_NAME, SUPPORT_GROUP, OWNER_USERNAME, BOT_USERNAME)
 @bot.on_message(filters.command("start"))
 def start_(bot, message):
     
-    START_TEXT = """Hey {}\n\nMyself {} \nA simple , lagfree and flexible music robot!\nIf you facing any issue related to this music bot then please join @{}\nFor more help you can explorer help menu by tapping on /help !"""
+    START_TEXT = """ʜᴇʏ {}\n\nᴍʏsᴇʟғ {} \nᴀ sɪᴍᴘʟᴇ , ʟᴀɢғʀᴇᴇ ᴀɴᴅ ғʟᴇxɪʙʟᴇ ᴍᴜsɪᴄ ʀᴏʙᴏᴛ!\nɪғ ʏᴏᴜ ғᴀᴄɪɴɢ ᴀɴʏ ɪssᴜᴇs ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜɪs ᴍᴜsɪᴄ ʙᴏᴛ ᴛʜᴇɴ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ @{}\nғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ʏᴏᴜ ᴄᴀɴ ᴇxᴘʟᴏʀᴇʀ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴛᴀᴘᴘɪɴɢ ᴏɴ /help !"""
 
     START_BUTTON = [
                 [
@@ -38,16 +38,16 @@ def start_(bot, message):
 
 @bot.on_message(filters.command("help"))
 def help_(bot, message):
-    HELP_TXT = """Hoi {}\nHere is the help menu choose your desireoption nd explorer it!!\nFor any kind of help or query Just join @{} and ask your query!!"""
+    HELP_TXT = """ʜᴏɪ {}\nʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴄʜᴏᴏsᴇ ʏᴏᴜʀ ᴅᴇsɪʀᴇᴏᴘᴛɪᴏɴ ᴀɴᴅ ᴇxᴘʟᴏʀᴇʀ ɪᴛ!!\nғᴏʀ ᴀɴʏ ᴋɪɴᴅ ᴏғ ʜᴇʟᴘ ᴏʀ ǫᴜᴇʀʏ ᴊᴜsᴛ ᴊᴏɪɴ @{} ᴀɴᴅ ᴀsᴋ ʏᴏᴜʀ ǫᴜᴇʀʏ!!"""
     
     HELP_BUTTON = [
         [
-            InlineKeyboardButton(text="ʙᴀsɪᴄ!", callback_data="basic_"),
-            InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ!", callback_data="admin_cmd"),
+            InlineKeyboardButton(text="ʙᴀsɪᴄ🧜", callback_data="basic_"),
+            InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ🧚", callback_data="admin_cmd"),
         ],
         [
-            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
-            InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
+            InlineKeyboardButton(text="ᴄʟᴏsᴇ🧞", callback_data="close_"),
+            InlineKeyboardButton(text="ʙᴀᴄᴋ🧝", callback_data="HOME"),
         ],
     ]
     message.reply_text(
@@ -60,16 +60,16 @@ def help_(bot, message):
 def callback_query(Client, callback: CallbackQuery):
     if callback.data == "help_":
     
-        HELP_TXT = f"""Hoi, Here is the help menu choose your desireoption nd explorer it!!\nFor any kind of help or query Just join @{SUPPORT_GROUP} and ask your query!!"""
+        HELP_TXT = f"""ʜᴏɪ, ʜᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴍᴇɴᴜ ᴄʜᴏᴏsᴇ ʏᴏᴜʀ ᴅᴇsʀɪᴇᴏᴘᴛɪᴏɴ ᴀɴᴅ ᴇxᴘʟᴏʀᴇʀ ɪᴛ!!\nғᴏʀ ᴀɴʏ ᴋɪɴᴅ ᴏғ ʜᴇʟᴘ ᴏʀ ǫᴜᴇʀʏ ᴊᴜsᴛ ᴊᴏɪɴ @{SUPPORT_GROUP} ᴀɴᴅ ᴀsᴋ ʏᴏᴜʀ ǫᴜᴇʀʏ!!"""
     
         HELP_BUTTON = [
             [
-                InlineKeyboardButton(text="ʙᴀsɪᴄ!", callback_data="basic_"),
-                InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ!", callback_data="admin_cmd"),
+                InlineKeyboardButton(text="ʙᴀsɪᴄ🧜", callback_data="basic_"),
+                InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ🧚", callback_data="admin_cmd"),
             ],
             [
-                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
-                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ🧞", callback_data="close_"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ🧝", callback_data="HOME"),
             ],
         ]
         callback.edit_message_text(
@@ -81,7 +81,7 @@ def callback_query(Client, callback: CallbackQuery):
         REPO_BUTTONS = [
             [
                 InlineKeyboardButton(text="ᴏᴡɴᴇʀ👻", url="https://t.me/My_Dear_Lightbright"),
-                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ🧝", callback_data="HOME"),
             ],
         ]
         callback.edit_message_text(
@@ -90,7 +90,7 @@ def callback_query(Client, callback: CallbackQuery):
         )
     elif callback.data == "HOME":
  
-        START_TEXT = f"""Hey, Myself {BOT_NAME} \nA simple , lagfree and flexible music robot!\nIf you facing any issue related to this music bot then please join @{SUPPORT_GROUP}\nFor more help you can explorer help menu by tapping on /help !"""
+        START_TEXT = f"""ʜᴇʏ, ᴍʏsᴇʟғ {BOT_NAME} \nᴀ sɪᴍᴘʟᴇ , ʟᴀɢғʀᴇᴇ ᴀɴᴅ ғʟᴇxɪʙʟᴇ ᴍᴜsɪᴄ ʀᴏʙᴏᴛ!\nɪғ ʏᴏᴜ ғᴀᴄɪɴɢ ᴀɴʏ ɪssᴜᴇs ʀᴇʟᴀᴛᴇᴅ ᴛᴏ ᴛʜɪs ᴍᴜsɪᴄ ʙᴏᴛ ᴛʜᴇɴ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ @{SUPPORT_GROUP}\nғᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ ʏᴏᴜ ᴄᴀɴ ᴇxᴘʟᴏʀᴇʀ ʜᴇʟᴘ ᴍᴇɴᴜ ʙʏ ᴛᴀᴘᴘɪɴɢ ᴏɴ /help !"""
         START_BUTTON = [
                     [
                         InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs🥀", url="https://t.me/SILENT_BOTS"),
@@ -111,7 +111,7 @@ def callback_query(Client, callback: CallbackQuery):
         )
     elif callback.data == "basic_":
         B_HELP = """
-`Basics Commands !!`
+`ʙᴀsɪᴄs ᴄᴏᴍᴍᴀɴᴅs🧜`
 
 /play (query, ytlink, audio file) - use this command and enjoy music
 /ytp (query) - Use it for better search music!!
@@ -120,8 +120,8 @@ def callback_query(Client, callback: CallbackQuery):
 """
         BUTTON = [
             [
-                InlineKeyboardButton(text="Close", callback_data="close_"),
-                InlineKeyboardButton(text="Back", callback_data="help_"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_"),
             ],
         ]
         callback.edit_message_text(
@@ -130,7 +130,7 @@ def callback_query(Client, callback: CallbackQuery):
         )
     elif callback.data == "admin_cmd":
         A_HELP = """
-`Admins Commands!!`
+`ᴀᴅᴍɪɴs ᴄᴏᴍᴍᴀɴᴅs🧚`
 
 /pause - To pause the song!
 /resume - Resume paused song!
@@ -139,7 +139,7 @@ def callback_query(Client, callback: CallbackQuery):
 /joinub - To invite assistant in your group!
 
 
-`Sudo Command!`
+`sᴜᴅᴏ ᴄᴏᴍᴍᴀɴᴅs🧞`
 
 /rmf - To clean Download file from database!
 /rmw - To clean raw files from database!
@@ -147,8 +147,8 @@ def callback_query(Client, callback: CallbackQuery):
 """
         BUTTON = [
             [
-                InlineKeyboardButton(text="Close", callback_data="close_"),
-                InlineKeyboardButton(text="Back", callback_data="help_"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_"),
             ],
         ]
         callback.edit_message_text(
