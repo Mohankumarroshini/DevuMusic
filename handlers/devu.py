@@ -18,15 +18,15 @@ def start_(bot, message):
 
     START_BUTTON = [
                 [
-                    InlineKeyboardButton(text="Updates", url=f"https://t.me/SILENT_BOTS"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs🥀", url=f"https://t.me/SILENT_BOTS"),
                     InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ💥", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                 ],
                 [
-                    InlineKeyboardButton(text="Owner", url=f"https://t.me/{OWNER_USERNAME}"),
-                    InlineKeyboardButton(text="Source✨", callback_data="repo_k"),
+                    InlineKeyboardButton(text="ᴏᴡɴᴇʀ👻", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton(text="sᴏᴜʀᴄᴇ✨", callback_data="repo_k"),
                 ],                
                 [                    
-                    InlineKeyboardButton(text="Help & Commands!", callback_data="help_"),
+                    InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs!", callback_data="help_"),
                 ],
                 
             ]
@@ -42,12 +42,12 @@ def help_(bot, message):
     
     HELP_BUTTON = [
         [
-            InlineKeyboardButton(text="Basic!", callback_data="basic_"),
-            InlineKeyboardButton(text="Advance!", callback_data="admin_cmd"),
+            InlineKeyboardButton(text="ʙᴀsɪᴄ!", callback_data="basic_"),
+            InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ!", callback_data="admin_cmd"),
         ],
         [
-            InlineKeyboardButton(text="Close", callback_data="close_"),
-            InlineKeyboardButton(text="Back", callback_data="HOME"),
+            InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
+            InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
         ],
     ]
     message.reply_text(
@@ -64,12 +64,12 @@ def callback_query(Client, callback: CallbackQuery):
     
         HELP_BUTTON = [
             [
-                InlineKeyboardButton(text="Basic!", callback_data="basic_"),
-                InlineKeyboardButton(text="Advance!", callback_data="admin_cmd"),
+                InlineKeyboardButton(text="ʙᴀsɪᴄ!", callback_data="basic_"),
+                InlineKeyboardButton(text="ᴀᴅᴠᴀɴᴄᴇ!", callback_data="admin_cmd"),
             ],
             [
-                InlineKeyboardButton(text="Close", callback_data="close_"),
-                InlineKeyboardButton(text="Back", callback_data="HOME"),
+                InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="close_"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
             ],
         ]
         callback.edit_message_text(
@@ -77,11 +77,11 @@ def callback_query(Client, callback: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(HELP_BUTTON)
         )
     elif callback.data == "repo_k":
-        REPO_MSG = f"""Hey, Here is the source code of {BOT_NAME} \nSo deploy your own and enjoy and don't forget to fork nd to give star 😕!!"""
+        REPO_MSG = f"""ʜᴇʏ, ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴏғ {BOT_NAME} ɪs ᴘʀɪᴠᴀᴛᴇ. \nsᴏ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴇᴘʟᴏʏ ʏᴏᴜʀ ᴏᴡɴ ʙᴏᴛ. ɪғ ʏᴏᴜ ᴡᴀɴᴛ ʀᴇᴘᴏ ᴀsᴋ ᴛᴏ ᴏᴡɴᴇʀ ✨👻 !!"""
         REPO_BUTTONS = [
             [
-                InlineKeyboardButton(text="Source", url="https://github.com/ItsmeHyper13/DevuMusic"),
-                InlineKeyboardButton(text="Back", callback_data="HOME"),
+                InlineKeyboardButton(text="ᴏᴡɴᴇʀ👻", url="https://t.me/My_Dear_Lightbright"),
+                InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="HOME"),
             ],
         ]
         callback.edit_message_text(
@@ -93,15 +93,15 @@ def callback_query(Client, callback: CallbackQuery):
         START_TEXT = f"""Hey, Myself {BOT_NAME} \nA simple , lagfree and flexible music robot!\nIf you facing any issue related to this music bot then please join @{SUPPORT_GROUP}\nFor more help you can explorer help menu by tapping on /help !"""
         START_BUTTON = [
                     [
-                        InlineKeyboardButton(text="Updates", url="https://t.me/SILENT_BOTS"),
+                        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs🥀", url="https://t.me/SILENT_BOTS"),
                         InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ💥", url=f"http://t.me/{BOT_USERNAME}?startgroup=true"),
                     ],
                     [
-                        InlineKeyboardButton(text="Owner", url=f"https://t.me/{OWNER_USERNAME}"),
-                        InlineKeyboardButton(text="Source✨", callback_data="repo_k"),
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ👻", url=f"https://t.me/{OWNER_USERNAME}"),
+                        InlineKeyboardButton(text="sᴏᴜʀᴄᴇ✨", callback_data="repo_k"),
                     ],                
                     [                    
-                        InlineKeyboardButton(text="Help & Commands!", callback_data="help_"),
+                        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs!", callback_data="help_"),
                     ],      
         ]
         
