@@ -11,7 +11,7 @@
 <pre>
 
 <b>Deploy DevuMusic to Heroku</b>
-<p><a href="https://heroku.com/deploy?template=https://github.com/ItsmeHyper13/DevuMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200""/></a></p>
+<p><a href="https://heroku.com/deploy?template=https://github.com/Mohankumarroshini/DevuMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="200""/></a></p>
 </pre>
 </details>
 <details>
